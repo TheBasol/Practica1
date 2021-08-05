@@ -1,0 +1,132 @@
+.cabecera {
+    background: #1ec004;
+    color: #fafafa;
+    display: flex;
+    position: relative;
+  }
+
+  .cabecera img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    opacity: 0.4;
+    filter: grayscale(100%);
+  }
+
+.cabecera__titulo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 3em;
+  }
+
+.cabecera_bloque1{
+    width: 50vw;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.cabecera_bloque1 > img{
+    object-position: center top;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cabecera_bloque2{
+    width: 50vw;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.cabecera_bloque2 > img{
+    object-position: center top;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cabecera_bloque3{
+  width: 50vw;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.cabecera_bloque3 > img{
+  object-position: center top;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.articulo {
+    max-width: 54em;
+    margin: 5em auto;
+    padding: 0 3em;
+  }
+
+  .articulo__entradilla {
+    column-count: 2;
+    column-gap: 3em;
+    column-rule: thick solid rgba(20, 22, 24, 0.05);
+    margin-bottom: 3em;
+    font-weight: 600;
+    font-size: 115%;
+    line-height: 1.7;
+    color: #1ec004;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .articulo__cuerpo {
+    max-width: 34em;
+    margin: auto;
+  }
+
+.sinopsis{
+  font-size: 100px;
+  padding-left: 25vw;
+  margin-bottom: 20px;
+}
+
+.imagen-figura {
+  max-width: 30em;
+  float: right;
+  background: #004e92;
+  margin-left: 5em;
+  margin-right: 1em;
+  shape-margin: 1em;
+  clip-path:  polygon(100% 0%, 92% 49%, 100% 100%, 25% 100%, 9% 51%, 25% 0%);
+  shape-outside:  polygon(100% 0%, 92% 49%, 100% 100%, 25% 100%, 9% 51%, 25% 0%) border-box;
+}
+
+.imagen-figura img {
+  display: block;
+  mix-blend-mode: hard-light;
+  clip-path:  polygon(100% 0%, 92% 49%, 100% 100%, 25% 100%, 9% 51%, 25% 0%);
+}
+
+@media (max-width: 37.5em) {
+  .sinopsis {
+    font-size: 70px;
+    padding-left: 10vw;
+    margin-bottom: 10px;
+  }
+
+  .imagen-hexagono {
+    margin: 1em;
+    shape-outside: unset;
+    margin: 40px 100px 40px 100px;
+  }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  /*Con border box el contenido solo toma el tamaño que tu le asignes
+  sin importar el pading,margin o tro elemento ya que no toma en 
+  cuenta estos elementos para crear el elemento, esto es ideal para 
+  dimensionar elementos*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  color: #333333;
+  font: 1.4em/1.8 "Anton", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 37.5rem) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+h1 {
+  font-size: 12vw;
+  /*Mas grande la caja del texto*/
+  line-height: 1;
+  /*Grueso de la letra*/
+  font-weight: 600;
+  font-style: italic;
+  opacity: 0.75;
+  margin-bottom: 5rem;
+}
